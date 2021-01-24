@@ -18,11 +18,11 @@ plt.plot(x, y, 'o', xnew, ynew, '-')
 roots0 = bisect(f, 1.20, 1.3)
 roots1 = bisect(f, 2, 2.3)
 roots2 = bisect(f, 2.7, 3)
-print("Pierwiastki: ", roots0, roots1, roots2)
+print(f"Pierwiastki: {roots0}, {roots1}, {roots2}")
 
 # pochodna y'(2.1)
 df_0 = np.poly1d(ynew)
 df_1 = derivative(df_0, 2.1)
 
-print("y'(2.1) = ", df_1)
+print(f"y'(2.1) = {df_1}")
 plt.show()
